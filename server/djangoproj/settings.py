@@ -61,11 +61,15 @@ ROOT_URLCONF = 'djangoproj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [
             os.path.join(BASE_DIR, 'frontend/static'),
             os.path.join(BASE_DIR, 'frontend/build'),
             os.path.join(BASE_DIR, 'frontend/build/static'),
         ],
+=======
+        'DIRS': [os.path.join(BASE_DIR,'frontend/static')],
+>>>>>>> d7740ef9dc700e338b873b8255ed530008be10f4
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -139,9 +143,13 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
+<<<<<<< HEAD
     os.path.join(BASE_DIR, 'frontend/static'),
     os.path.join(BASE_DIR, 'frontend/build'),
     os.path.join(BASE_DIR, 'frontend/build/static'),
+=======
+    os.path.join(BASE_DIR,'frontend/static')
+>>>>>>> d7740ef9dc700e338b873b8255ed530008be10f4
 ]
 
 CSRF_TRUSTED_ORIGINS = [
